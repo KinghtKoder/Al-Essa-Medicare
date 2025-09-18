@@ -1,9 +1,16 @@
-{
+
+  {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/public",
   "framework": "vite",
   "installCommand": "npm install",
   "routes": [
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    },
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
