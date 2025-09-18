@@ -25,10 +25,10 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    // Build relative to the root (client folder)
-    outDir: "../dist/public",
-    emptyOutDir: true,
-  },
+  outDir: "dist",
+  emptyOutDir: true,
+},
+
   server: {
     fs: {
       strict: true,
