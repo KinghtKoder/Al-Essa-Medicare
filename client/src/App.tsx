@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "@/pages/not-found";
+import { Analytics } from "@vercel/analytics/react";
 
 function Router() {
   return (
@@ -42,6 +43,7 @@ function App() {
             <Footer />
           </div>
           <Toaster />
+          <Analytics />
         </ThemeProvider>
       </TooltipProvider>
     </QueryClientProvider>
